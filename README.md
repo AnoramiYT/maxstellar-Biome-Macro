@@ -11,9 +11,6 @@
 - Biome detection without OCR
 - Aura detection without OCR
 - Notifications on Aura roll
-- Roll detection without cutscene or equip needed (coming soon!)
-- Jester and Eden detection (coming soon!)
-- Configurable Discord notifications for biomes and Jester (coming soon!)
 
 ## Installation
 Download the [latest release](https://github.com/maxstellar/maxstellar-Biome-Macro/releases/latest) and put it in an empty folder. Run the .exe file and configure to your liking.<br><br>
@@ -23,26 +20,6 @@ Alternatively, if you already have Python installed, download the Python file al
 ### Macro doesn't detect biomes
 - Close ALL instances of Roblox and the macro, and then opening Roblox, and then opening the macro.
 - Make sure your PC time is not offset (early or late)
-
-### Macro detects biomes but can't detect rolls or Jester
-If you are using Bloxstrap, follow these instructions:
-1. Go into Bloxstrap settings
-2. Click on the Engine Settings tab
-3. Scroll all the way down to "Fast Flag Editor" and click it (You may receive a warning. This is completely safe if you follow these exact instructions.)
-4. Click "Add New" -> "Import JSON"
-5. Paste the following code into the field and click "OK"
-
-```json
-{
-  "FStringDebugLuaLogLevel": "trace",
-  "FStringDebugLuaLogPattern": "ExpChat/mountClientApp"
-}
-```
-
-Otherwise, here are a list of things to try, in order:
-1. Restart Roblox
-2. Delete last_roblox_version value from config.ini file in the macro folder, restart the macro and then run it and let it patch Roblox, and then restart Roblox.
-3. Redownload the macro and save it to a different location entirely.
 
 ### Macro won't launch (shows error message)
 - Make sure the zip file downloaded was extracted fully (into a folder)
