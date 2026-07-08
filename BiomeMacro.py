@@ -59,7 +59,7 @@ if not os.path.exists(config_name):
     config['Macro'] = {'aura_detection': "1", "aura_ping": "0", "min_rarity_to_ping": "", "last_roblox_version": "", "roblox_username": ""}
     config['Biomes'] = {'windy': "Message", 'snowy': "Message", 'rainy': "Message", 'sand_storm': "Message",
                         'hell': "Message", "starfall": "Message",
-                        "corruption": "Message", "null": "Message", "heaven": "Message"}
+                        "corruption": "Message", "null": "Message", "heaven": "Message", "singularity": "Message"}
     with open(config_name, 'w') as conffile:
         config.write(conffile)
 config.read(config_name)
@@ -357,7 +357,7 @@ def check_for_hover_text(file):
                                                     webhook.add_embed(embed)
                                                     if globals()[event.replace(" ", "_").lower()].get() == "Ping":
                                                         webhook.set_content(f"<@{discID.get()}>")
-                                                    if event == "GLITCHED" or event == "DREAMSPACE":
+                                                    if event == "GLITCHED" or event == "DREAMSPACE" or event == "CYBERSPACE":
                                                         webhook.set_content("@everyone")
                                                     webhook.execute()
                                         except:
