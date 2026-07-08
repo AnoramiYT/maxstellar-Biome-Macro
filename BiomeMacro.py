@@ -543,11 +543,11 @@ def manage_tlw():
                                                         variable=sand_storm,
                                                         command=set_sand_storm)
         sand_storm_toggle.grid(row=4, column=1, sticky="w", padx=10, pady=10)
-        pumpkin_moon_toggle = customtkinter.CTkOptionMenu(tlw, values=["Message", "Ping", "Nothing"],
-                                                        font=customtkinter.CTkFont(family="Segoe UI", size=20),
-                                                        variable=pumpkin_moon,
-                                                        command=set_pumpkin_moon)
-        pumpkin_moon_toggle.grid(row=5, column=1, sticky="w", padx=10, pady=10)
+        #pumpkin_moon_toggle = customtkinter.CTkOptionMenu(tlw, values=["Message", "Ping", "Nothing"],
+        #                                                font=customtkinter.CTkFont(family="Segoe UI", size=20),
+        #                                                variable=pumpkin_moon,
+        #                                                command=set_pumpkin_moon)
+        #pumpkin_moon_toggle.grid(row=5, column=1, sticky="w", padx=10, pady=10)
         hell_toggle = customtkinter.CTkOptionMenu(tlw, values=["Message", "Ping", "Nothing"],
                                                   font=customtkinter.CTkFont(family="Segoe UI", size=20), variable=hell,
                                                   command=set_hell)
